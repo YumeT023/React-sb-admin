@@ -1,0 +1,161 @@
+.w-20 {
+    width: 20% !important;
+}
+.w-15 {
+    width: 15% !important;
+}
+.w-10 {
+    width: 10% !important;
+}
+
+#DataTable {
+    width: 100%;
+    border-spacing: 0;
+}
+
+#DataTable > thead {
+    border-bottom: 2px solid black;
+}
+#DataTable td, th {
+    border: 1px solid #d9d9d9;
+    border-collapse: separate;
+    font-size: 14px;
+}
+
+#DataTable td {
+    padding: 8px;
+}
+#DataTable tbody > tr:hover {
+    cursor: default;
+    background-color: #e9ecef;
+}
+
+#DataTable th {
+    padding: 8px;
+    cursor: pointer;
+	user-select: none;
+}
+
+.sorter {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.sorter::before,
+.sorter::after {
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 4px;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	opacity: 0.2;
+}
+
+.sorter::before {
+	border-top: 4px solid #000;
+	bottom: 0px;
+}
+
+.sorter::after {
+	border-bottom: 4px solid #000;
+	border-top: 4px solid transparent;
+	top: 0px;
+}
+
+.desc .sorter::before,
+.asc .sorter::after {
+    opacity: 0.7;
+}
+
+/* .tableTop { */
+	/* padding-block: 2px 16px; */
+/* } */
+
+.tableTop {
+	padding-block: 2px 16px;
+}
+.tableBottom {
+	padding-block: 16px 2px;
+}
+
+.entryControl {
+	margin-right: 0.7%;
+	display: inline-block;
+	width: auto;
+	padding-block: 6px;
+}
+
+
+
+
+
+/* PAGINATION HELPER */
+
+.pagination-container {
+	float: right;
+	width: auto;
+	
+}
+
+a.active
+a.active:hover
+a.active:active {
+  background-color: #0d6efd;
+}
+
+.border-light {
+	border: 1px solid #e9ecef !important;
+}
+
+ul.pagination {
+	margin: 0;
+	padding-left: 0;
+}
+
+li.pagination {
+	list-style: none;
+	float: left;
+}
+
+.dataTable-pagination a {
+	border: 1px solid transparent;
+	float: left;
+	margin-left: 2px;
+	padding: 6px 12px;
+	position: relative;
+	text-decoration: none;
+	color: #333;
+}
+
+.dataTable-pagination a:hover {
+	background-color: #d9d9d9;
+}
+
+.dataTable-pagination .active a,
+.dataTable-pagination .active a:focus,
+.dataTable-pagination .active a:hover {
+	background-color: #d9d9d9;
+	cursor: default;
+}
+
+.dataTable-pagination .ellipsis a,
+.dataTable-pagination .disabled a,
+.dataTable-pagination .disabled a:focus,
+.dataTable-pagination .disabled a:hover {
+	cursor: not-allowed;
+}
+
+.dataTable-pagination .disabled a,
+.dataTable-pagination .disabled a:focus,
+.dataTable-pagination .disabled a:hover {
+	cursor: not-allowed;
+	opacity: 0.4;
+}
+
+.dataTable-pagination .pager a {
+	font-weight: bold;
+}
